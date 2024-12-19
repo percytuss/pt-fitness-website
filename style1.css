@@ -1,8 +1,4 @@
 /* General Styles */
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,16 +15,14 @@ header {
     justify-content: space-between;
     background-color: #000;
     color: #fff;
-    width: 100%;
-    padding: 10px 5%;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-sizing: border-box;
 }
 
 header img {
-    height: 4rem; /* Proportional size */
+    height: 70px;
 }
 
 nav ul {
@@ -36,7 +30,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 nav ul li {
@@ -65,9 +58,8 @@ nav ul li a {
     position: relative;
     text-align: center;
     color: #fff;
-    background: linear-gradient(45deg, #333, #218838), url('your-image.jpg') no-repeat center center;
-    background-size: cover; /* Ensure background scales */
-    height: 100vh; /* Fit the viewport height */
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 400px;
 }
 
 .hero h1 {
@@ -75,7 +67,7 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4vw; /* Responsive font size */
+    font-size: 2.5rem;
     text-shadow: 2px 2px 5px #000;
 }
 
@@ -98,7 +90,7 @@ nav ul li a {
 .content {
     max-width: 1200px;
     margin: 30px auto;
-    padding: 0 5%;
+    padding: 0 20px;
 }
 
 .content h2 {
@@ -115,9 +107,7 @@ nav ul li a {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 30px 5%;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 30px 10%;
 }
 
 .footer-container {
@@ -159,110 +149,4 @@ footer {
     border-top: 1px solid #333;
     padding-top: 10px;
     color: #aaa;
-}
-
-/* Responsive Styles */
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-/* Large Screens (1281px and above) */
-@media (min-width: 1281px) {
-    /* Add specific large screen styles here */
-}
-
-/* Laptops and Desktops (1025px to 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .content {
-        padding: 0 40px;
-    }
-}
-
-/* Tablets (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Mobile Landscape (481px to 767px) */
-@media (min-width: 481px) and (max-width: 767px) {
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-    nav ul.show {
-        display: flex;
-    }
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Mobile Portrait (320px to 480px) */
-@media (min-width: 320px) and (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    .content {
-        padding: 0 10px;
-    }
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-    nav ul.show {
-        display: flex;
-    }
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-logo img {
-        height: 40px;
-    }
-    .footer-bottom {
-        font-size: 0.8rem;
-    }
 }
