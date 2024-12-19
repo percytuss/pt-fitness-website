@@ -19,14 +19,16 @@ header {
     justify-content: space-between;
     background-color: #000;
     color: #fff;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px 5%;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 header img {
-    height: 70px;
+    height: 4rem; /* Proportional size */
 }
 
 nav ul {
@@ -34,6 +36,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 nav ul li {
@@ -94,7 +97,7 @@ nav ul li a {
 .content {
     max-width: 1200px;
     margin: 30px auto;
-    padding: 0 20px;
+    padding: 0 5%;
 }
 
 .content h2 {
@@ -111,7 +114,9 @@ nav ul li a {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 30px 10%;
+    padding: 30px 5%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-container {
@@ -199,7 +204,7 @@ footer {
 /* Mobile Portrait (320px to 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .content {
         padding: 0 10px;
@@ -210,5 +215,16 @@ footer {
     }
     nav ul.show {
         display: flex;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo img {
+        height: 40px;
+    }
+    .footer-bottom {
+        font-size: 0.8rem;
     }
 }
