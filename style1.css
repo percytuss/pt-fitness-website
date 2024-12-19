@@ -1,4 +1,5 @@
 /* General Styles */
+/* General Styles */
 * {
     box-sizing: border-box;
 }
@@ -8,16 +9,16 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
-    text-align: center; /* Center-align all text */
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Default text color */
+    text-align: center; /* Center-align the entire body content */
 }
 
 /* Section Styling */
 section {
     margin: 20px auto; /* Space between sections */
-    max-width: 800px; /* Limit section width for better readability */
-    padding: 0 20px; /* Add padding for mobile view */
+    max-width: 800px; /* Limit section width */
+    padding: 0 20px; /* Add padding for responsiveness */
 }
 
 /* Titles (h2) */
@@ -46,24 +47,29 @@ ul li::before {
     color: #218838; /* Match title color */
 }
 
-/* Content Wrapper */
-.content {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 5%;
-    text-align: center; /* Center-align content */
-}
-
-.content h2 {
-    margin-top: 20px;
-    color: #218838; /* Green for content titles */
-}
-
 /* Video Section */
 .video-container {
-    text-align: center;
+    text-align: center; /* Center-align video container */
     margin: 20px 0;
 }
+
+/* Button Styling */
+button {
+    background-color: #218838; /* Green button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1c7430; /* Darker green on hover */
+}
+
 
 /* Footer */
 footer {
