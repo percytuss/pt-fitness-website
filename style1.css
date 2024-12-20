@@ -6,7 +6,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Add padding around the body */
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
@@ -96,14 +96,23 @@ nav ul li a {
 
 /* Content Section */
 .content {
-    max-width: 1200px;
-    margin: 30px auto;
+    max-width: 800px; /* Adjusted for better readability */
+    margin: 30px auto; /* Center the content */
     padding: 0 20px;
 }
 
 .content h2 {
     margin-top: 20px;
-    color: #218838;
+    color: #218838; /* Green color for titles */
+    font-size: 1.8rem; /* Slightly larger font size */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.content p {
+    margin-top: 10px; /* Space between paragraphs */
+    font-size: 1rem;
+    color: #333;
 }
 
 .video-container {
