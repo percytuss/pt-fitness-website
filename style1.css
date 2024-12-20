@@ -1,8 +1,12 @@
 /* General Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Add padding around the body */
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #333;
@@ -15,14 +19,16 @@ header {
     justify-content: space-between;
     background-color: #000;
     color: #fff;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px 5%;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 header img {
-    height: 70px;
+    height: 4rem; /* Proportional size */
 }
 
 nav ul {
@@ -30,6 +36,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap; /* Ensures items wrap on smaller screens */
 }
 
 nav ul li {
@@ -58,8 +65,9 @@ nav ul li a {
     position: relative;
     text-align: center;
     color: #fff;
-    background: url('your-image.jpg') no-repeat center center/cover;
-    height: 400px;
+    background: linear-gradient(45deg, #333, #218838), url('your-image.jpg') no-repeat center center;
+    background-size: cover; /* Ensure background scales */
+    height: 100vh; /* Fit the viewport height */
 }
 
 .hero h1 {
@@ -67,7 +75,7 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5rem;
+    font-size: 4vw; /* Responsive font size */
     text-shadow: 2px 2px 5px #000;
 }
 
@@ -88,14 +96,23 @@ nav ul li a {
 
 /* Content Section */
 .content {
-    max-width: 1200px;
-    margin: 30px auto;
+    max-width: 800px; /* Adjusted for better readability */
+    margin: 30px auto; /* Center the content */
     padding: 0 20px;
 }
 
 .content h2 {
     margin-top: 20px;
-    color: #218838;
+    color: #218838; /* Green color for titles */
+    font-size: 1.8rem; /* Slightly larger font size */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.content p {
+    margin-top: 10px; /* Space between paragraphs */
+    font-size: 1rem;
+    color: #333;
 }
 
 .video-container {
@@ -107,7 +124,9 @@ nav ul li a {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 30px 10%;
+    padding: 30px 5%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-container {
@@ -150,6 +169,7 @@ footer {
     padding-top: 10px;
     color: #aaa;
 }
+
 /* Responsive Styles */
 
 /* For mobile phones: */
