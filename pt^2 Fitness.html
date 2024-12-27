@@ -127,24 +127,5 @@
             &copy; 2024 pt² fitness | All Rights Reserved
         </div>
     </footer>
-    <script>
-    // Wait for the page to load
-    window.onload = function() {
-        // Get all navigation links
-        const navLinks = document.querySelectorAll('#nav-ul li a');
-        
-        // Loop through each link
-        navLinks.forEach(link => {
-            // Add event listener for click event
-            link.addEventListener('click', function() {
-                // Remove the 'active' class from all links
-                navLinks.forEach(navLink => navLink.classList.remove('active'));
-                
-                // Add the 'active' class to the clicked link
-                link.classList.add('active');
-            });
-        });
-    }
-  </script>
 </body>
 </html>
