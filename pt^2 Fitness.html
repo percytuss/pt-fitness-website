@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pt² fitness - Programme Registration</title>
+    <title>pt² fitness</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style1.css">
 </head>
@@ -32,7 +32,38 @@
         <h1>Empowering Refugee Youth Through Boxing</h1>
     </section>
 
-    <!-- Registration Section -->
+    <!-- Content Section -->
+    <section class="content">
+        <h2>What WE DO</h2>
+        <p><strong>pt² fitness</strong> is more than just boxing. </p>
+        <p>A place where young refugees can feel a sense of belonging, can rewrite their stories,</p>
+        <p>Here, they discover the art of boxing and the power of their potential.</p>
+    
+        <h2>WHO WE SERVE</h2>
+        <p>We empower refugee youth aged 16 to 25 of all abilities. </p>
+        <p>Individuals looking for confidence, community, and a chance to thrive.</p>
+
+        <h2> WHY It Matters</h2>
+        <p>Our mission is to create a vibrant, inclusive community where boxing becomes a vehicle for transformation.</p>
+        <p>Through accessible, empowering boxing programs, we help young people:</p>
+        <ul>
+            <li>Build resilience.</li>
+            <li>Find their inner strength.</li>
+            <li>Unlock their potential.</li>
+        </ul>
+        <p>Rooted in personal growth, respect, and connection, pt² Fitness is about more than training—it’s about changing lives.</p>
+        
+        <h2> OUR STORY</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-link" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div class="cta-section">
+            <a href="programme.html" class="cta-button">Join us</a>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
     <section class="registration-form">
         <h2>Register for pt² Fitness Program</h2>
         
@@ -96,21 +127,5 @@
             &copy; 2024 pt² fitness | All Rights Reserved
         </div>
     </footer>
-
-    <script>
-        // Basic form validation
-        document.getElementById('registration-form').addEventListener('submit', function(event) {
-            var fullName = document.getElementById('fullName').value;
-            var age = document.getElementById('age').value;
-            var email = document.getElementById('email').value;
-            var contact = document.getElementById('contact').value;
-            var motivation = document.getElementById('motivation').value;
-
-            if (!fullName || !age || !email || !contact || !motivation) {
-                event.preventDefault();
-                alert("Please fill out all fields.");
-            }
-        });
-    </script>
 </body>
 </html>
